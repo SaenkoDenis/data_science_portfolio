@@ -351,7 +351,7 @@ def create_databases():
 
     try:
 
-        conn = 'mysql+pymysql://root:j2706s0801@localhost:3307/'
+        conn = 'mysql+pymysql://root:password@localhost:3307/'
 
         engine = sqlalchemy.create_engine(conn)
 
@@ -363,7 +363,7 @@ def create_databases():
 
         print('Невозможно подключиться к базе или она уже существует:\n', ex)
 
-        conn = 'mysql+pymysql://root:j2706s0801@localhost:3307/scenter_bosch'
+        conn = 'mysql+pymysql://root:password@localhost:3307/scenter_bosch'
 
         engine = sqlalchemy.create_engine(conn)
 
